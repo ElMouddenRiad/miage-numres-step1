@@ -28,7 +28,7 @@ Vous avez 4 séances de TD/TP pour  produire un site web qui permettent de répo
 
 # Notation
  - 2pt  de rendu par séance
- - 12 pt de QCM/Questions ouvertes lors du dernier tp  (1H dernière seance)
+ - 12 pt de Questions ouvertes lors du dernier tp  (1H dernière seance)
 
 > [!WARNING]
 > Noubliez pas de faire votre pullRequest en fin de td/tp
@@ -37,13 +37,10 @@ Vous avez 4 séances de TD/TP pour  produire un site web qui permettent de répo
 > Il y a des commandes utiles en bas de page.
 
 # Environnement
-L'ensemble des  4 TD/TP sont à réaliser sur **_Gitpod_**.
+L'ensemble des  4 TD/TP sont à réaliser sur **_GitHub Codespaces_**.
 
-**_Gitpod_** est une plateforme de développement cloud qui permet de configurer des environnements de développement prêts à l’emploi pour tout projet, directement depuis un dépôt Git.
- Elle automatise la préparation des environnements (dépendances, configurations, etc.),
-  réduisant ainsi le temps d’installation et les problèmes de compatibilité.
-  Grâce à son intégration avec des outils comme GitHub, GitLab, et Bitbucket, Gitpod propose des espaces de travail reproductibles et éphémères.
-
+**_GitHub Codespaces_** est un IDE complet basé sur VS Code accessible directement dans votre navigateur. Aucun besoin d'installer Java, Node.js ou Maven sur votre machine : l'environnement est pré-configuré avec toutes les dépendances nécessaires. Elle automatise la préparation des environnements (dépendances, configurations, etc.), réduisant ainsi le temps d’installation et les problèmes de compatibilité.
+  
 
 # Déroulement
 Dans le monde de l'*Open Source*, lorsque l'on veut contribuer à un projet, on propose des évolutions à une base de code (un **repo**) qui  seront approuvées ou non par un validateur (**reviewer**). C'est ce que l'on appel  **faire une PR**.
@@ -56,8 +53,8 @@ Ainsi pour chacun des TD/TPS, il faudra:
 1. Commiter vos modifs sur votre repo.
 1. Proposer vos modifications sur le repo. parent (**PullRequest**)
 
-# Creation des comptes
-Vous allez créer 2 comptes: un sur GitHub et un sur GitPod. Ces comptes seront utilisés lors des 4TD/TP.
+# Creation du compte
+Vous allez créer 1 compte  sur GitHub (à moins que vous n'en ayez déjà un et que vous n'ayez pas consommé tout votre quotas d'utilisation de Codespaces). Ce compte sera utilisé lors des 4TD/TP.
 
 ## GitHub
 Dans cette section nous créons un compte sur Github. Si vous en avez déjà vous pouvez passer à l'étape suivante.
@@ -69,25 +66,7 @@ Dans cette section nous créons un compte sur Github. Si vous en avez déjà vou
 1. Connecter vous au site github avec le nouveau compte créé
 1. Remplissez le formulaire
 ![Github1](assets/GitHub3.png)
-## Gitpod
-### Creation compte
-1. Se  rendre sur https://gitpod.io/login, selectionner **Gitpod classic** (**PAS FLEX**) et se connecter avec Github
-![Github1](assets/GitPod1.png)
-1. Authoriser Gitpod à accèder à votre compte Github
-![Github1](assets/GitPod2.png)
-1. Sélectionner la formule à 1Ohrs/mois
-![Github1](assets/GitPod3.png)
-1. Préciser que vous etes étudiant
-![Github1](assets/GitPod4.png)
-### Configuration du compte
-Il faut ajouter à votre compte gitpod le droit de pouvoir  lire&ecrire sur vos repos github.
-1. Se connecter à votre compte Gitpod
-1. Se rendre  dans votre paramètres de comptes
-![Github1](assets/GitPodSettings1.png)
-1. Editer les paramètres de vote liaison à Github dans le menu 'Git Provider'
-![Github1](assets/GitPodSettings2.png)
-1. Ajouter le droit de lecture/ecriture à vos repos à travers Gitpod
-![Github1](assets/GitPodSettings3.png)
+
 
 # Fork du projet
 L'objectif est de créer une copie du projet 'miage-numres-step1' sur votre compte github.
@@ -98,6 +77,7 @@ L'objectif est de créer une copie du projet 'miage-numres-step1' sur votre comp
 ![Capture d'écran](assets/Fork1.png)
 ![Capture d'écran](assets/Fork2.png)
 
+
 # TP1 - Stack Back-End
 L'architecture   générale de  l'application  Burger Quizz est la suivante :
 ![Capture d'écran](assets/Archi.png)
@@ -107,16 +87,28 @@ Une application web consomme une API Rest  qui s'appuie sur une base de données
 Ce TP1 doit permettre de  choisir la  stack d'implementation de l'api. Le choix est à faire entre **Springboot** et **Quarkus**.
 
 
-# Utiliser gitpod
+# Utiliser GitHub codespaces
 
-Pour utiliser  **GitPod** avec votre projet forké, il suffit d'ouvrir  l'url suivant dans votre navigateur :
-**https://gitpod.io/#** + **URL_REPO_GITHUB**
+1. Rendez-vous sur la page principale de votre projet forké
+![Capture d'écran](assets/GitHubFork.png)
+1. En haut de cette page, cliquez sur le bouton vert <> Code
+1. Sélectionnez l'onglet Codespaces
+1. Cliquez sur Create codespace on main
+![Capture d'écran](assets/GitHubCodeSpaceSettup.png)
+1. Attendez environ 1 à 2 minutes que l'environnement se construise (le système installe Java, Node.js et les extensions nécessaires automatiquement).
 
-Avec un repo _https://github.com/miage3-ae/miage-numres-step1_ alors l'url est : **https://gitpod.io/#https://github.com/miage3-ae/miage-numres-step1**
+Sinon vous pouvez clicquer ici  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=${github.repository_id})
 
-Avec l'exemple ci-dessus et étant connecté à GitPod avec votre compte, vous devez obtenir cette fenêtre:
+> [!TIP]
+> Fermez la fenêtre de Copilot, vous n'en avez pas besoin.
 
-![Capture d'écran](assets/GitPodUsage1.png)
+> [!WARNING]
+> Assurez-vous d'avoir forké ce projet sur votre compte personnel avant de cliquer sur le bouton ci-dessus, sinon vous ne pourrez pas enregistrer (pusher) vos modifications.
+
+> [!WARNING]
+> Vous disposez de 60 heures gratuites par mois. Quand vous avez terminé votre travail, cliquez sur le nom du Codespace en bas à gauche et choisissez Stop Current Codespace.
+![Capture d'écran](assets/GitHubStop.png)
+
 
 Vous êtes désormais connecté à votre environnement de developpement.
 
