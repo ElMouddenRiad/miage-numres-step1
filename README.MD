@@ -152,6 +152,7 @@ Répondre aux questions Q3,Q4,Q5 et Q6 du fichier **_Questions.md_**
 1. Mesurer la mémoire consommer par l'api quarkus `ps -e -o pid,rss,args | grep quarkus-run`
 Répondre aux questions Q7,Q8 et Q9 du fichier **_Questions.md_**
 
+1. Installer GraalVM dans un terminal : `sdk install java 21.0.2-graalce`
 1. Dans le terminal, construire l'application quarkus en mode Natif
 1. Lancer la commande `./api-quarkus/target/api-quarkus-1.0.0-SNAPSHOT-runner`
 1. Mesurer la mémoire consommer par l'api quarkus `ps -e -o pid,rss,args | grep runner`
