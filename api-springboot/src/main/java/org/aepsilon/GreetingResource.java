@@ -10,6 +10,6 @@ public class GreetingResource {
 
     @GetMapping("/hello")
     public String sayHello() {
-        return "Hello, World!";
+        return "Hello, Springboot!";
     }
 }
